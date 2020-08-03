@@ -6,7 +6,6 @@ async function fetchData(size, onProgress) {
   console.log("feching", url);
 
   const res = await fetch(url);
-  alert(!!res);
   if (!res.ok) {
     throw Error(res.status + " " + res.statusText);
   }
